@@ -1,0 +1,713 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65534D402111BCDF00882AF1 /* test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 65534D3F2111BCDF00882AF1 /* test.txt */; };
+		658365522109AB49002039F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 658365512109AB49002039F6 /* AppDelegate.m */; };
+		658365552109AB49002039F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 658365542109AB49002039F6 /* ViewController.m */; };
+		658365582109AB49002039F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 658365562109AB49002039F6 /* Main.storyboard */; };
+		6583655B2109AB49002039F6 /* ZGiReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 658365592109AB49002039F6 /* ZGiReader.xcdatamodeld */; };
+		6583655D2109AB49002039F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6583655C2109AB49002039F6 /* Assets.xcassets */; };
+		658365602109AB49002039F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6583655E2109AB49002039F6 /* LaunchScreen.storyboard */; };
+		658365632109AB49002039F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 658365622109AB49002039F6 /* main.m */; };
+		6583656D2109AB49002039F6 /* ZGiReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6583656C2109AB49002039F6 /* ZGiReaderTests.m */; };
+		658365782109AB49002039F6 /* ZGiReaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 658365772109AB49002039F6 /* ZGiReaderUITests.m */; };
+		658365882109ABB1002039F6 /* ZGBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 658365872109ABB1002039F6 /* ZGBaseViewController.m */; };
+		6583658C2109ABF1002039F6 /* ZGiReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6583658B2109ABF1002039F6 /* ZGiReaderViewController.m */; };
+		658365932109B525002039F6 /* ZGiReaderCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 658365922109B525002039F6 /* ZGiReaderCollectionView.m */; };
+		658CCD97211159A4007E88B4 /* ZGiReaderCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 658CCD96211159A4007E88B4 /* ZGiReaderCollectionViewFlowLayout.m */; };
+		658CCD9B21116088007E88B4 /* NSString+ZGiReaderPaging.m in Sources */ = {isa = PBXBuildFile; fileRef = 658CCD9A21116088007E88B4 /* NSString+ZGiReaderPaging.m */; };
+		658CCD9E21116199007E88B4 /* ZGiReaderPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 658CCD9D21116199007E88B4 /* ZGiReaderPageView.m */; };
+		658CCDA4211162A7007E88B4 /* ZGiReaderGlobalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 658CCDA3211162A7007E88B4 /* ZGiReaderGlobalModel.m */; };
+		658CCDA7211164D4007E88B4 /* ZGiReaderAppInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 658CCDA6211164D4007E88B4 /* ZGiReaderAppInfoManager.m */; };
+		658CCDAA21116762007E88B4 /* ZGiReaderPageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 658CCDA921116762007E88B4 /* ZGiReaderPageCell.m */; };
+		65BAC19021129F8400B06FFC /* ZGiReaderCurrentTempView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BAC18F21129F8400B06FFC /* ZGiReaderCurrentTempView.m */; };
+		65BAC1992112E77D00B06FFC /* ZGiReaderRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BAC1982112E77D00B06FFC /* ZGiReaderRecordModel.m */; };
+		65BAC19C2112F22700B06FFC /* ZGiReaderReadUtilites.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BAC19B2112F22700B06FFC /* ZGiReaderReadUtilites.m */; };
+		65BAC19E2112F40000B06FFC /* 205832.txt in Resources */ = {isa = PBXBuildFile; fileRef = 65BAC19D2112F40000B06FFC /* 205832.txt */; };
+		65BAC1A12112F7FE00B06FFC /* JJPreventCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BAC1A02112F7FE00B06FFC /* JJPreventCrash.m */; };
+		65BAC1A42112FBFF00B06FFC /* ZGiReaderChapterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BAC1A32112FBFF00B06FFC /* ZGiReaderChapterModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		658365692109AB49002039F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 658365452109AB49002039F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6583654C2109AB49002039F6;
+			remoteInfo = ZGiReader;
+		};
+		658365742109AB49002039F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 658365452109AB49002039F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6583654C2109AB49002039F6;
+			remoteInfo = ZGiReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65534D3F2111BCDF00882AF1 /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
+		6583654D2109AB49002039F6 /* ZGiReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZGiReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		658365502109AB49002039F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		658365512109AB49002039F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		658365532109AB49002039F6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		658365542109AB49002039F6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		658365572109AB49002039F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6583655A2109AB49002039F6 /* ZGiReader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZGiReader.xcdatamodel; sourceTree = "<group>"; };
+		6583655C2109AB49002039F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6583655F2109AB49002039F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		658365612109AB49002039F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		658365622109AB49002039F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		658365682109AB49002039F6 /* ZGiReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZGiReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6583656C2109AB49002039F6 /* ZGiReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGiReaderTests.m; sourceTree = "<group>"; };
+		6583656E2109AB49002039F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		658365732109AB49002039F6 /* ZGiReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZGiReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		658365772109AB49002039F6 /* ZGiReaderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGiReaderUITests.m; sourceTree = "<group>"; };
+		658365792109AB49002039F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		658365862109ABB1002039F6 /* ZGBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGBaseViewController.h; sourceTree = "<group>"; };
+		658365872109ABB1002039F6 /* ZGBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGBaseViewController.m; sourceTree = "<group>"; };
+		6583658A2109ABF1002039F6 /* ZGiReaderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGiReaderViewController.h; sourceTree = "<group>"; };
+		6583658B2109ABF1002039F6 /* ZGiReaderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGiReaderViewController.m; sourceTree = "<group>"; };
+		658365912109B525002039F6 /* ZGiReaderCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGiReaderCollectionView.h; sourceTree = "<group>"; };
+		658365922109B525002039F6 /* ZGiReaderCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGiReaderCollectionView.m; sourceTree = "<group>"; };
+		658CCD95211159A4007E88B4 /* ZGiReaderCollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGiReaderCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		658CCD96211159A4007E88B4 /* ZGiReaderCollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGiReaderCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		658CCD9821115C90007E88B4 /* ZGiReaderHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGiReaderHeader.h; sourceTree = "<group>"; };
+		658CCD9921116088007E88B4 /* NSString+ZGiReaderPaging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ZGiReaderPaging.h"; sourceTree = "<group>"; };
+		658CCD9A21116088007E88B4 /* NSString+ZGiReaderPaging.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZGiReaderPaging.m"; sourceTree = "<group>"; };
+		658CCD9C21116199007E88B4 /* ZGiReaderPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGiReaderPageView.h; sourceTree = "<group>"; };
+		658CCD9D21116199007E88B4 /* ZGiReaderPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGiReaderPageView.m; sourceTree = "<group>"; };
+		658CCDA2211162A7007E88B4 /* ZGiReaderGlobalModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGiReaderGlobalModel.h; sourceTree = "<group>"; };
+		658CCDA3211162A7007E88B4 /* ZGiReaderGlobalModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGiReaderGlobalModel.m; sourceTree = "<group>"; };
+		658CCDA5211164D4007E88B4 /* ZGiReaderAppInfoManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGiReaderAppInfoManager.h; sourceTree = "<group>"; };
+		658CCDA6211164D4007E88B4 /* ZGiReaderAppInfoManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGiReaderAppInfoManager.m; sourceTree = "<group>"; };
+		658CCDA821116762007E88B4 /* ZGiReaderPageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGiReaderPageCell.h; sourceTree = "<group>"; };
+		658CCDA921116762007E88B4 /* ZGiReaderPageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGiReaderPageCell.m; sourceTree = "<group>"; };
+		65BAC18E21129F8400B06FFC /* ZGiReaderCurrentTempView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGiReaderCurrentTempView.h; sourceTree = "<group>"; };
+		65BAC18F21129F8400B06FFC /* ZGiReaderCurrentTempView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGiReaderCurrentTempView.m; sourceTree = "<group>"; };
+		65BAC1972112E77D00B06FFC /* ZGiReaderRecordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGiReaderRecordModel.h; sourceTree = "<group>"; };
+		65BAC1982112E77D00B06FFC /* ZGiReaderRecordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGiReaderRecordModel.m; sourceTree = "<group>"; };
+		65BAC19A2112F22700B06FFC /* ZGiReaderReadUtilites.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGiReaderReadUtilites.h; sourceTree = "<group>"; };
+		65BAC19B2112F22700B06FFC /* ZGiReaderReadUtilites.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGiReaderReadUtilites.m; sourceTree = "<group>"; };
+		65BAC19D2112F40000B06FFC /* 205832.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 205832.txt; sourceTree = "<group>"; };
+		65BAC19F2112F7FD00B06FFC /* JJPreventCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJPreventCrash.h; sourceTree = "<group>"; };
+		65BAC1A02112F7FE00B06FFC /* JJPreventCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJPreventCrash.m; sourceTree = "<group>"; };
+		65BAC1A22112FBFF00B06FFC /* ZGiReaderChapterModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGiReaderChapterModel.h; sourceTree = "<group>"; };
+		65BAC1A32112FBFF00B06FFC /* ZGiReaderChapterModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGiReaderChapterModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6583654A2109AB49002039F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		658365652109AB49002039F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		658365702109AB49002039F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		658365442109AB49002039F6 = {
+			isa = PBXGroup;
+			children = (
+				658365852109AB89002039F6 /* ZGiReaderController */,
+				6583654F2109AB49002039F6 /* ZGiReader */,
+				6583656B2109AB49002039F6 /* ZGiReaderTests */,
+				658365762109AB49002039F6 /* ZGiReaderUITests */,
+				6583654E2109AB49002039F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6583654E2109AB49002039F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6583654D2109AB49002039F6 /* ZGiReader.app */,
+				658365682109AB49002039F6 /* ZGiReaderTests.xctest */,
+				658365732109AB49002039F6 /* ZGiReaderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6583654F2109AB49002039F6 /* ZGiReader */ = {
+			isa = PBXGroup;
+			children = (
+				658365502109AB49002039F6 /* AppDelegate.h */,
+				658365512109AB49002039F6 /* AppDelegate.m */,
+				658365532109AB49002039F6 /* ViewController.h */,
+				658365542109AB49002039F6 /* ViewController.m */,
+				658365562109AB49002039F6 /* Main.storyboard */,
+				6583655C2109AB49002039F6 /* Assets.xcassets */,
+				6583655E2109AB49002039F6 /* LaunchScreen.storyboard */,
+				658365612109AB49002039F6 /* Info.plist */,
+				658365622109AB49002039F6 /* main.m */,
+				658365592109AB49002039F6 /* ZGiReader.xcdatamodeld */,
+			);
+			path = ZGiReader;
+			sourceTree = "<group>";
+		};
+		6583656B2109AB49002039F6 /* ZGiReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				6583656C2109AB49002039F6 /* ZGiReaderTests.m */,
+				6583656E2109AB49002039F6 /* Info.plist */,
+			);
+			path = ZGiReaderTests;
+			sourceTree = "<group>";
+		};
+		658365762109AB49002039F6 /* ZGiReaderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				658365772109AB49002039F6 /* ZGiReaderUITests.m */,
+				658365792109AB49002039F6 /* Info.plist */,
+			);
+			path = ZGiReaderUITests;
+			sourceTree = "<group>";
+		};
+		658365852109AB89002039F6 /* ZGiReaderController */ = {
+			isa = PBXGroup;
+			children = (
+				65BAC19D2112F40000B06FFC /* 205832.txt */,
+				65534D3F2111BCDF00882AF1 /* test.txt */,
+				65BAC19F2112F7FD00B06FFC /* JJPreventCrash.h */,
+				65BAC1A02112F7FE00B06FFC /* JJPreventCrash.m */,
+				65BAC19A2112F22700B06FFC /* ZGiReaderReadUtilites.h */,
+				65BAC19B2112F22700B06FFC /* ZGiReaderReadUtilites.m */,
+				658CCD9921116088007E88B4 /* NSString+ZGiReaderPaging.h */,
+				658CCD9A21116088007E88B4 /* NSString+ZGiReaderPaging.m */,
+				658CCD9821115C90007E88B4 /* ZGiReaderHeader.h */,
+				658CCDA5211164D4007E88B4 /* ZGiReaderAppInfoManager.h */,
+				658CCDA6211164D4007E88B4 /* ZGiReaderAppInfoManager.m */,
+				6583658D2109B18F002039F6 /* ZGiReader */,
+				658365892109ABBF002039F6 /* Base */,
+			);
+			path = ZGiReaderController;
+			sourceTree = "<group>";
+		};
+		658365892109ABBF002039F6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				658365862109ABB1002039F6 /* ZGBaseViewController.h */,
+				658365872109ABB1002039F6 /* ZGBaseViewController.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		6583658D2109B18F002039F6 /* ZGiReader */ = {
+			isa = PBXGroup;
+			children = (
+				658365902109B1D2002039F6 /* Model */,
+				6583658F2109B1C7002039F6 /* View */,
+				6583658E2109B1B3002039F6 /* Controller */,
+			);
+			path = ZGiReader;
+			sourceTree = "<group>";
+		};
+		6583658E2109B1B3002039F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6583658A2109ABF1002039F6 /* ZGiReaderViewController.h */,
+				6583658B2109ABF1002039F6 /* ZGiReaderViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6583658F2109B1C7002039F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				658365912109B525002039F6 /* ZGiReaderCollectionView.h */,
+				658365922109B525002039F6 /* ZGiReaderCollectionView.m */,
+				658CCD95211159A4007E88B4 /* ZGiReaderCollectionViewFlowLayout.h */,
+				658CCD96211159A4007E88B4 /* ZGiReaderCollectionViewFlowLayout.m */,
+				658CCD9C21116199007E88B4 /* ZGiReaderPageView.h */,
+				658CCD9D21116199007E88B4 /* ZGiReaderPageView.m */,
+				658CCDA821116762007E88B4 /* ZGiReaderPageCell.h */,
+				658CCDA921116762007E88B4 /* ZGiReaderPageCell.m */,
+				65BAC18E21129F8400B06FFC /* ZGiReaderCurrentTempView.h */,
+				65BAC18F21129F8400B06FFC /* ZGiReaderCurrentTempView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		658365902109B1D2002039F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				658CCDA2211162A7007E88B4 /* ZGiReaderGlobalModel.h */,
+				658CCDA3211162A7007E88B4 /* ZGiReaderGlobalModel.m */,
+				65BAC1972112E77D00B06FFC /* ZGiReaderRecordModel.h */,
+				65BAC1982112E77D00B06FFC /* ZGiReaderRecordModel.m */,
+				65BAC1A22112FBFF00B06FFC /* ZGiReaderChapterModel.h */,
+				65BAC1A32112FBFF00B06FFC /* ZGiReaderChapterModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6583654C2109AB49002039F6 /* ZGiReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6583657C2109AB49002039F6 /* Build configuration list for PBXNativeTarget "ZGiReader" */;
+			buildPhases = (
+				658365492109AB49002039F6 /* Sources */,
+				6583654A2109AB49002039F6 /* Frameworks */,
+				6583654B2109AB49002039F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZGiReader;
+			productName = ZGiReader;
+			productReference = 6583654D2109AB49002039F6 /* ZGiReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		658365672109AB49002039F6 /* ZGiReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6583657F2109AB49002039F6 /* Build configuration list for PBXNativeTarget "ZGiReaderTests" */;
+			buildPhases = (
+				658365642109AB49002039F6 /* Sources */,
+				658365652109AB49002039F6 /* Frameworks */,
+				658365662109AB49002039F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6583656A2109AB49002039F6 /* PBXTargetDependency */,
+			);
+			name = ZGiReaderTests;
+			productName = ZGiReaderTests;
+			productReference = 658365682109AB49002039F6 /* ZGiReaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		658365722109AB49002039F6 /* ZGiReaderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 658365822109AB49002039F6 /* Build configuration list for PBXNativeTarget "ZGiReaderUITests" */;
+			buildPhases = (
+				6583656F2109AB49002039F6 /* Sources */,
+				658365702109AB49002039F6 /* Frameworks */,
+				658365712109AB49002039F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				658365752109AB49002039F6 /* PBXTargetDependency */,
+			);
+			name = ZGiReaderUITests;
+			productName = ZGiReaderUITests;
+			productReference = 658365732109AB49002039F6 /* ZGiReaderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		658365452109AB49002039F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ZGiReader;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = aikutv;
+				TargetAttributes = {
+					6583654C2109AB49002039F6 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					658365672109AB49002039F6 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6583654C2109AB49002039F6;
+					};
+					658365722109AB49002039F6 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6583654C2109AB49002039F6;
+					};
+				};
+			};
+			buildConfigurationList = 658365482109AB49002039F6 /* Build configuration list for PBXProject "ZGiReader" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 658365442109AB49002039F6;
+			productRefGroup = 6583654E2109AB49002039F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6583654C2109AB49002039F6 /* ZGiReader */,
+				658365672109AB49002039F6 /* ZGiReaderTests */,
+				658365722109AB49002039F6 /* ZGiReaderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6583654B2109AB49002039F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65BAC19E2112F40000B06FFC /* 205832.txt in Resources */,
+				658365602109AB49002039F6 /* LaunchScreen.storyboard in Resources */,
+				6583655D2109AB49002039F6 /* Assets.xcassets in Resources */,
+				65534D402111BCDF00882AF1 /* test.txt in Resources */,
+				658365582109AB49002039F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		658365662109AB49002039F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		658365712109AB49002039F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		658365492109AB49002039F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				658CCD9B21116088007E88B4 /* NSString+ZGiReaderPaging.m in Sources */,
+				658CCD97211159A4007E88B4 /* ZGiReaderCollectionViewFlowLayout.m in Sources */,
+				6583658C2109ABF1002039F6 /* ZGiReaderViewController.m in Sources */,
+				658365552109AB49002039F6 /* ViewController.m in Sources */,
+				65BAC19021129F8400B06FFC /* ZGiReaderCurrentTempView.m in Sources */,
+				658CCDA4211162A7007E88B4 /* ZGiReaderGlobalModel.m in Sources */,
+				658CCDA7211164D4007E88B4 /* ZGiReaderAppInfoManager.m in Sources */,
+				658CCDAA21116762007E88B4 /* ZGiReaderPageCell.m in Sources */,
+				65BAC1A12112F7FE00B06FFC /* JJPreventCrash.m in Sources */,
+				658365932109B525002039F6 /* ZGiReaderCollectionView.m in Sources */,
+				658CCD9E21116199007E88B4 /* ZGiReaderPageView.m in Sources */,
+				65BAC1A42112FBFF00B06FFC /* ZGiReaderChapterModel.m in Sources */,
+				658365882109ABB1002039F6 /* ZGBaseViewController.m in Sources */,
+				65BAC1992112E77D00B06FFC /* ZGiReaderRecordModel.m in Sources */,
+				658365522109AB49002039F6 /* AppDelegate.m in Sources */,
+				658365632109AB49002039F6 /* main.m in Sources */,
+				65BAC19C2112F22700B06FFC /* ZGiReaderReadUtilites.m in Sources */,
+				6583655B2109AB49002039F6 /* ZGiReader.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		658365642109AB49002039F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6583656D2109AB49002039F6 /* ZGiReaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6583656F2109AB49002039F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				658365782109AB49002039F6 /* ZGiReaderUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6583656A2109AB49002039F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6583654C2109AB49002039F6 /* ZGiReader */;
+			targetProxy = 658365692109AB49002039F6 /* PBXContainerItemProxy */;
+		};
+		658365752109AB49002039F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6583654C2109AB49002039F6 /* ZGiReader */;
+			targetProxy = 658365742109AB49002039F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		658365562109AB49002039F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				658365572109AB49002039F6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6583655E2109AB49002039F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6583655F2109AB49002039F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6583657A2109AB49002039F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6583657B2109AB49002039F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6583657D2109AB49002039F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85X69HTM5H;
+				INFOPLIST_FILE = ZGiReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.aikutv.cc.ZGiReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6583657E2109AB49002039F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85X69HTM5H;
+				INFOPLIST_FILE = ZGiReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.aikutv.cc.ZGiReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		658365802109AB49002039F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZGiReaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.aikutv.cc.ZGiReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZGiReader.app/ZGiReader";
+			};
+			name = Debug;
+		};
+		658365812109AB49002039F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZGiReaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.aikutv.cc.ZGiReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZGiReader.app/ZGiReader";
+			};
+			name = Release;
+		};
+		658365832109AB49002039F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZGiReaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.aikutv.cc.ZGiReaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZGiReader;
+			};
+			name = Debug;
+		};
+		658365842109AB49002039F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZGiReaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.aikutv.cc.ZGiReaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZGiReader;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		658365482109AB49002039F6 /* Build configuration list for PBXProject "ZGiReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6583657A2109AB49002039F6 /* Debug */,
+				6583657B2109AB49002039F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6583657C2109AB49002039F6 /* Build configuration list for PBXNativeTarget "ZGiReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6583657D2109AB49002039F6 /* Debug */,
+				6583657E2109AB49002039F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6583657F2109AB49002039F6 /* Build configuration list for PBXNativeTarget "ZGiReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				658365802109AB49002039F6 /* Debug */,
+				658365812109AB49002039F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		658365822109AB49002039F6 /* Build configuration list for PBXNativeTarget "ZGiReaderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				658365832109AB49002039F6 /* Debug */,
+				658365842109AB49002039F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		658365592109AB49002039F6 /* ZGiReader.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6583655A2109AB49002039F6 /* ZGiReader.xcdatamodel */,
+			);
+			currentVersion = 6583655A2109AB49002039F6 /* ZGiReader.xcdatamodel */;
+			path = ZGiReader.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 658365452109AB49002039F6 /* Project object */;
+}
