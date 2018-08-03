@@ -30,10 +30,10 @@ static NSString * cell_id = @"cellid";
     [super viewDidLoad];
     
     [self.view addSubview:self.readerCollectionView];
-    [self.view addSubview:self.iReaderCurrentTempView];
+   // [self.view addSubview:self.iReaderCurrentTempView];
     
-    UITapGestureRecognizer * tapGesRec = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(callToolBar:)];
-    [self.view addGestureRecognizer:tapGesRec];
+//    UITapGestureRecognizer * tapGesRec = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(callToolBar:)];
+//    [self.view addGestureRecognizer:tapGesRec];
 }
 
 - (void)loadText:(NSString *)text
@@ -145,7 +145,7 @@ static NSString * cell_id = @"cellid";
 
     [self.iReaderCurrentTempView.pageView setText:[[NSAttributedString alloc] initWithString:subText attributes:self.attributes]];
     
-    cell.contentView.backgroundColor = zgRc4randomColor;
+    cell.contentView.backgroundColor = ZGiReader_backgroundColor;
     return cell;
 }
 
@@ -245,7 +245,7 @@ static NSString * cell_id = @"cellid";
     if (!_readerCollectionView) {
         ZGiReaderCollectionView * readerCollectionView = [[ZGiReaderCollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:self.flowLayout];
         _readerCollectionView = readerCollectionView;
-        _readerCollectionView.backgroundColor = [UIColor redColor];
+        _readerCollectionView.backgroundColor = ZGiReader_backgroundColor;//[UIColor redColor];
         _readerCollectionView.dataSource = self;
         _readerCollectionView.delegate = self;
         [_readerCollectionView registerClass:[ZGiReaderPageCell class] forCellWithReuseIdentifier:cell_id];

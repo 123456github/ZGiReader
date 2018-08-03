@@ -27,7 +27,7 @@
     NSString * str = [ZGiReaderReadUtilites encodeWithURL:url];//[NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
     NSArray * arr = [ZGiReaderReadUtilites encodeReturnFilterSplitContentTextWithURL:url];
     
-    ZGiReaderChapterModel * model = [JJPreventCrash jjObjectWithArray:arr AndAtIndex:100];
+    ZGiReaderChapterModel * model = [JJPreventCrash jjObjectWithArray:arr AndAtIndex:100];//显示第几章传入几，适用于目录
    
     ZGiReaderViewController * iReaderViewController = [ZGiReaderViewController new];
     [self addChildViewController:iReaderViewController];
