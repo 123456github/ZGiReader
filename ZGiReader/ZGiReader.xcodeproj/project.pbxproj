@@ -32,6 +32,7 @@
 		65BAC19E2112F40000B06FFC /* 205832.txt in Resources */ = {isa = PBXBuildFile; fileRef = 65BAC19D2112F40000B06FFC /* 205832.txt */; };
 		65BAC1A12112F7FE00B06FFC /* JJPreventCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BAC1A02112F7FE00B06FFC /* JJPreventCrash.m */; };
 		65BAC1A42112FBFF00B06FFC /* ZGiReaderChapterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BAC1A32112FBFF00B06FFC /* ZGiReaderChapterModel.m */; };
+		65CBD7C6211464A80047A146 /* ZGiReaderTopAndBottomBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CBD7C5211464A80047A146 /* ZGiReaderTopAndBottomBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,8 @@
 		65BAC1A02112F7FE00B06FFC /* JJPreventCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJPreventCrash.m; sourceTree = "<group>"; };
 		65BAC1A22112FBFF00B06FFC /* ZGiReaderChapterModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGiReaderChapterModel.h; sourceTree = "<group>"; };
 		65BAC1A32112FBFF00B06FFC /* ZGiReaderChapterModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGiReaderChapterModel.m; sourceTree = "<group>"; };
+		65CBD7C4211464A80047A146 /* ZGiReaderTopAndBottomBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGiReaderTopAndBottomBarController.h; sourceTree = "<group>"; };
+		65CBD7C5211464A80047A146 /* ZGiReaderTopAndBottomBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGiReaderTopAndBottomBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +230,8 @@
 			children = (
 				6583658A2109ABF1002039F6 /* ZGiReaderViewController.h */,
 				6583658B2109ABF1002039F6 /* ZGiReaderViewController.m */,
+				65CBD7C4211464A80047A146 /* ZGiReaderTopAndBottomBarController.h */,
+				65CBD7C5211464A80047A146 /* ZGiReaderTopAndBottomBarController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -404,6 +409,7 @@
 				65BAC19021129F8400B06FFC /* ZGiReaderCurrentTempView.m in Sources */,
 				658CCDA4211162A7007E88B4 /* ZGiReaderGlobalModel.m in Sources */,
 				658CCDA7211164D4007E88B4 /* ZGiReaderAppInfoManager.m in Sources */,
+				65CBD7C6211464A80047A146 /* ZGiReaderTopAndBottomBarController.m in Sources */,
 				658CCDAA21116762007E88B4 /* ZGiReaderPageCell.m in Sources */,
 				65BAC1A12112F7FE00B06FFC /* JJPreventCrash.m in Sources */,
 				658365932109B525002039F6 /* ZGiReaderCollectionView.m in Sources */,

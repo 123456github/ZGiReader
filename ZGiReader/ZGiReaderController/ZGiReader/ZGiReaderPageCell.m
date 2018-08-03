@@ -21,7 +21,10 @@
     if (self) {
         [self.contentView addSubview:self.pageView];
         self.iFrame = frame;
-        self.pageView.frame = CGRectMake(offSet_x, 0, frame.size.width - 2 * offSet_x, frame.size.height);//self.contentView.bounds;
+        
+        
+        
+        self.pageView.frame = ZGiReader_pageView_Frame;//ZGiReader_pageView_Size;
         
         //        [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|[_pageView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_pageView)]];
         //        [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_pageView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_pageView)]];
@@ -29,6 +32,7 @@
         
    //     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(RollingModeUpdateMargin) name:@"RollingModeUpdateMargin" object:nil];
     }
+    
     return self;
 }
 
@@ -43,7 +47,7 @@
     if (!_pageView) {
         _pageView = [[ZGiReaderPageView alloc] init];
         _pageView.translatesAutoresizingMaskIntoConstraints = NO;
-        _pageView.backgroundColor = ZGiReader_backgroundColor;
+        _pageView.backgroundColor = zgRc4randomColor;//ZGiReader_backgroundColor;
     }
     return _pageView;
 }

@@ -51,7 +51,7 @@
     paragraphStyle.alignment = NSTextAlignmentJustified;
     [attributes setValue:paragraphStyle forKey:NSParagraphStyleAttributeName];
     self.attributes = [attributes copy];
-    self.rangeArray = [[self.text paginationWithAttributes:self.attributes constrainedToSize:CGSizeMake(K_SCREEN_WIDTH - 2*offSet_x, K_SCREEN_HEIGHT - 30 - offSet_y)] mutableCopy];//每一页的大小
+    self.rangeArray = [[self.text paginationWithAttributes:self.attributes constrainedToSize:ZGiReader_pageView_Size] mutableCopy];//每一页的大小
     if (completion) {
         completion();
     }

@@ -12,15 +12,19 @@
 #import "ZGiReaderPageCell.h"
 #import "NSString+ZGiReaderPaging.h"
 #import "ZGiReaderCurrentTempView.h"
+#import "ZGiReaderTopAndBottomBarController.h"
 
 #define NetworkExceptionPromptString @"获取章节失败，请尝试重新加载"//网络异常提示字符串
 static NSString * cell_id = @"cellid";
-@interface ZGiReaderViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface ZGiReaderViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UIGestureRecognizerDelegate>
 @property(nonatomic,strong)ZGiReaderCollectionView * readerCollectionView;
 @property (strong, nonatomic) ZGiReaderCollectionViewFlowLayout *flowLayout;
 @property (nonatomic, strong) NSMutableArray *rangeArray;
 @property (nonatomic, strong) NSString *chapterTextString;
 @property (nonatomic, strong) ZGiReaderCurrentTempView * iReaderCurrentTempView;
+
+@property (nonatomic, strong) ZGiReaderTopAndBottomBarController * iReaderTopAndBottomBarController;
+
 @property(nonatomic, assign)CGPoint touchBeganPoint;
 @end
 
@@ -29,16 +33,43 @@ static NSString * cell_id = @"cellid";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.view addSubview:self.readerCollectionView];
-   // [self.view addSubview:self.iReaderCurrentTempView];
+
+    [self setupUI];
     
-//    UITapGestureRecognizer * tapGesRec = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(callToolBar:)];
-//    [self.view addGestureRecognizer:tapGesRec];
+
 }
+
+- (void)setupUI
+{
+    
+    [self.view addSubview:self.readerCollectionView];
+    // [self.view addSubview:self.iReaderCurrentTempView];
+    
+    UITapGestureRecognizer * tapGesRec = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(callToolBar:)];
+    //tapGesRec.delegate = self;
+    [self.readerCollectionView addGestureRecognizer:tapGesRec];
+   // [self.view addSubview:self.iReaderTopAndBottomBar];
+  //  [self addChildViewController:self.iReaderTopAndBottomBarController];
+    [self.view addSubview:self.iReaderTopAndBottomBarController.view];
+}
+
+#pragma mark - 处理手势冲突
+
+//- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+//    if ([touch.view class] == [ZGiReaderPageView class]) {
+//        return YES;
+//    }else {
+//        return NO;
+//    }
+//}
+
+
+
 
 - (void)loadText:(NSString *)text
 {
-    
+    //去除文章开头和结尾的空格和换行，防止出现空白页
+    text = [text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     if ([text rangeOfString:@"(null)"].location != NSNotFound) {
         text = [text stringByReplacingOccurrencesOfString:@"(null)" withString:NetworkExceptionPromptString];
     }
@@ -57,7 +88,7 @@ static NSString * cell_id = @"cellid";
     paragraphStyle.alignment = NSTextAlignmentJustified;
     [attributes setValue:paragraphStyle forKey:NSParagraphStyleAttributeName];
     self.attributes = [attributes copy];
-    self.rangeArray = [[text paginationWithAttributes:self.attributes constrainedToSize:CGSizeMake(K_SCREEN_WIDTH - 2*offSet_x, K_SCREEN_HEIGHT - 30 - offSet_y)] mutableCopy];//每一页的大小
+    self.rangeArray = [[text paginationWithAttributes:self.attributes constrainedToSize:CGSizeMake(K_SCREEN_WIDTH - 2*offSet_x, K_SCREEN_HEIGHT - label_Height - offSet_y)] mutableCopy];
 //    if (completion) {
 //        completion();
 //    }
@@ -160,17 +191,42 @@ static NSString * cell_id = @"cellid";
 #pragma mark - 自定义手势
 - (void)callToolBar:(UITapGestureRecognizer *)tap{
     CGPoint startP = [tap locationInView:self.view];
+    
+ 
+    [self showOrHiddenIReaderTopAndBottomBarControllerViewWithPoint:startP];
+    
     NSLog(@"开始(%f,%f)",startP.x,startP.y);
 }
 
 
+/**
+ 展示或隐藏设置栏
+ @param point 手势坐标
+ */
+- (void)showOrHiddenIReaderTopAndBottomBarControllerViewWithPoint:(CGPoint)point
+{
+    if (point.x < K_SCREEN_WIDTH*2/3 && point.x > K_SCREEN_WIDTH/3 &&point.y < K_SCREEN_HEIGHT*2/3 && point.y > K_SCREEN_HEIGHT/3) {
+        
+        [self.iReaderTopAndBottomBarController hiddenOrShowZGiReaderTopAndBottomBar];
+        if (self.iReaderTopAndBottomBarController.view.superview == self.view) {
+            [self performSelector:@selector(iReaderTopAndBottomBarControllerViewRemoveFromSuperView) withObject:self afterDelay:ZGiReader_afterDelay];
+        }else{
+            [self.view addSubview:self.iReaderTopAndBottomBarController.view];
+        }
+    }
+}
+
+- (void)iReaderTopAndBottomBarControllerViewRemoveFromSuperView
+{
+    [self.iReaderTopAndBottomBarController.view removeFromSuperview];
+}
 
 // 根据touches集合获取对应的触摸点
 - (CGPoint)pointWithTouches:(NSSet *)touches
 {
     UITouch *touch = [touches anyObject];
 
-    return [touch locationInView:self.readerCollectionView];
+    return [touch locationInView:self.view];
 }
 
 
@@ -178,6 +234,11 @@ static NSString * cell_id = @"cellid";
 {
     CGPoint startP = [self pointWithTouches:touches];
     NSLog(@"开始(%f,%f)",startP.x,startP.y);
+    
+   // CGPoint startP = [tap locationInView:self.view];
+    
+    [self showOrHiddenIReaderTopAndBottomBarControllerViewWithPoint:startP];
+    
     if ([event allTouches].count == 1) {
 
 
@@ -223,6 +284,17 @@ static NSString * cell_id = @"cellid";
 
 
 #pragma mark - 懒加载
+- (ZGiReaderTopAndBottomBarController *)iReaderTopAndBottomBarController
+{
+    if (!_iReaderTopAndBottomBarController) {
+        _iReaderTopAndBottomBarController = [[ZGiReaderTopAndBottomBarController alloc] init];
+    }
+    return _iReaderTopAndBottomBarController;
+}
+
+
+
+
 - (ZGiReaderCurrentTempView *)iReaderCurrentTempView
 {
     if (!_iReaderCurrentTempView) {
