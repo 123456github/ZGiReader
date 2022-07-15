@@ -1,0 +1,137 @@
+{
+  "msg" : "success",
+  "rc" : 0,
+  "data" : {
+    "albumId" : 78595,
+    "pager" : {
+      "pageSize" : 100,
+      "total" : 5,
+      "page" : 1
+    },
+    "list" : [
+      {
+        "explainVideoDuration" : 0,
+        "stat" : [
+          {
+            "mode" : "explain",
+            "isFinished" : true,
+            "page" : -1
+          }
+        ],
+        "narrator" : "",
+        "author" : "",
+        "brand" : "历史人文",
+        "bookId" : "YWlyZXM6MjY3Nzc5MQ",
+        "desc" : "",
+        "audio" : "http:\/\/baidu.com\/media\/res\/20220112\/a25f9187552d06c5b94d7bf402a558cc_acf.mp3",
+        "level" : "L3",
+        "publisher" : "",
+        "cover" : "http:\/\/baidu.com\/media\/res\/20211223\/b290e4b7942c44445ca3bb592d8874ce.jpg",
+        "type" : 10,
+        "guideVideoDuration" : 0,
+        "duration" : 1298,
+        "explainVideo" : "",
+        "guideVideo" : "",
+        "name" : "中国历史13-1：绅士卖鸦片",
+        "explainVideoSize" : 0
+      },
+      {
+        "explainVideoDuration" : 0,
+        "stat" : [
+          {
+            "mode" : "explain",
+            "isFinished" : false,
+            "page" : 0
+          }
+        ],
+        "narrator" : "",
+        "author" : "",
+        "brand" : "历史人文",
+        "bookId" : "YWlyZXM6MjY3Nzc5Mg",
+        "desc" : "",
+        "audio" : "http:\/\/baidu.com\/media\/res\/20220112\/2296cd1cb65b6771823d45d67cdd1613_acf.mp3",
+        "level" : "L3",
+        "publisher" : "",
+        "cover" : "http:\/\/baidu.com\/media\/res\/20211223\/b290e4b7942c44445ca3bb592d8874ce.jpg",
+        "type" : 10,
+        "guideVideoDuration" : 0,
+        "duration" : 1255,
+        "explainVideo" : "",
+        "guideVideo" : "",
+        "name" : "中国历史13-2：太平天国",
+        "explainVideoSize" : 0
+      },
+      {
+        "explainVideoDuration" : 0,
+        "stat" : [
+
+        ],
+        "narrator" : "",
+        "author" : "",
+        "brand" : "文化通识",
+        "bookId" : "YWlyZXM6MjY3NzgyMQ",
+        "desc" : "",
+        "audio" : "http:\/\/baidu.com\/media\/res\/20220112\/2d322941cfb671f285ed37d390885fd7_acf.mp3",
+        "level" : "L3",
+        "publisher" : "",
+        "cover" : "http:\/\/baidu.com\/media\/res\/20211228\/79bba6a784354fd5f33575437fa07a28.jpg",
+        "type" : 10,
+        "guideVideoDuration" : 63,
+        "duration" : 1433,
+        "explainVideo" : "",
+        "guideVideo" : "http:\/\/baidu.com\/media\/res\/20220109\/181c0b37c119540daac1bb11c3cb944b.mp4",
+        "name" : "中国奇迹：你好，长城（上）",
+        "explainVideoSize" : 0
+      },
+      {
+        "explainVideoDuration" : 0,
+        "stat" : [
+
+        ],
+        "narrator" : "",
+        "author" : "",
+        "brand" : "文化通识",
+        "bookId" : "YWlyZXM6MjY3NzgyMw",
+        "desc" : "",
+        "audio" : "http:\/\/baidu.com\/media\/res\/20220112\/9d21e08d448fcaf718a25e4843b69011_acf.mp3",
+        "level" : "L3",
+        "publisher" : "",
+        "cover" : "http:\/\/baidu.com\/media\/res\/20211228\/79bba6a784354fd5f33575437fa07a28.jpg",
+        "type" : 10,
+        "guideVideoDuration" : 0,
+        "duration" : 1534,
+        "explainVideo" : "",
+        "guideVideo" : "",
+        "name" : "中国奇迹：你好，长城（下）",
+        "explainVideoSize" : 0
+      },
+      {
+        "explainVideoDuration" : 0,
+        "stat" : [
+          {
+            "mode" : "explain",
+            "isFinished" : false,
+            "page" : 0
+          }
+        ],
+        "narrator" : "",
+        "author" : "",
+        "brand" : "国学素养",
+        "bookId" : "YWlyZXM6MjY3Nzg0Ng",
+        "desc" : "",
+        "audio" : "http:\/\/baidu.com\/media\/res\/20220112\/a5f261ee4702ab143e501593b557ecca_acf.mp3",
+        "level" : "L3",
+        "publisher" : "",
+        "cover" : "http:\/\/baidu.com\/media\/res\/20211228\/fa41d92db46b5d0fbad482b6975e7e74.jpg",
+        "type" : 10,
+        "guideVideoDuration" : 97,
+        "duration" : 1271,
+        "explainVideo" : "",
+        "guideVideo" : "http:\/\/baidu.com\/media\/res\/20220110\/4fbc687fd1568c26cf9fb30327402cd9.mp4",
+        "name" : "古诗私房课1-1：江南",
+        "explainVideoSize" : 0
+      }
+    ]
+  }
+}
+
